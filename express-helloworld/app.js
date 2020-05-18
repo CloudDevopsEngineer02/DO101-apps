@@ -4,7 +4,7 @@ app = express();
 app.get('/', function (req, res) {
   res.send('Hello World!\n');
 });
-app.get('/moon', (req,res) => {
+app.get('/moon', function (req,res) {
   res.send('Hello Moon!\n')
 });
 app.listen(8080, function () {
